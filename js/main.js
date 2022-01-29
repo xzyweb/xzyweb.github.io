@@ -17,7 +17,7 @@ $.get({
 					}
                 }
 				if(top==true){
-					var topup = topup + '<a href="./body.html?page=' + data[i].number + '" class="list-group-item list-group-item-action"><h4><span class="badge rounded-pill bg-primary">置顶</span>' + data[i].title.substr(4) + '</h4><p>'+ data[i].body.split("\n")[0]+'</p>' + label + '</a>';
+					var topup = topup + '<a href="./body.html?page=' + data[i].number + '" class="list-group-item list-group-item-action"><h4><span class="badge rounded-pill bg-primary">置顶</span>' + data[i].title + '</h4><p>'+ data[i].body.split("\n")[0]+'</p>' + label + '</a>';
 				}else{
 					var body = body +'<a href="./body.html?page=' + data[i].number + '" class="list-group-item list-group-item-action"><h4>' + data[i].title + '</h4><p>'+ data[i].body.split("\n")[0]+'</p>' + label + '</li>';
 				}
