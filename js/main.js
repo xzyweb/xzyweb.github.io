@@ -1,5 +1,5 @@
 $.get({
-    url: "https://api.github.com/repos/xzyweb/xzyweb.github.io/issues?state=open&per_page=10&page=1&labels=置顶,资源",
+    url: "https://api.github.com/repos/xzyweb/xzyweb.github.io/issues?state=open&per_page=10&page=1&labels=置顶;广告;手机资源;电脑资源;工具推荐",
     dataType: "json",
     success: function(data) {
         if (!data.hasOwnProperty('message')) {
