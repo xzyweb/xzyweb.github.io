@@ -53,7 +53,11 @@ $.get({
                 var label = "";
                 var img = "";
                 for (n = 0; n in data[i].labels; n++) {
-                    var label = label + '<span class="badge rounded-pill bg-primary">' + data[i].labels[n].name + '</span> '
+                    if(data[i].labels[n].name=="置顶"){
+                    	var top=true;
+                    }else{
+                    	var label = label + '<span class="badge rounded-pill bg-primary">' + data[i].labels[n].name + '</span> ';
+                    }
                 }
 				if(data[i].title.substr(0,4)!=="[置顶]"){
 					var body = body +'<a href="./body.html?page=' + data[i].number + '" class="list-group-item list-group-item-action"><h4>' + data[i].title + '</h4><p>'+ data[i].body.split("\n")[0]+'</p>' + label + '</li>';
