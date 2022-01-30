@@ -13,6 +13,7 @@ function getbody(){
 	    dataType: "json",
 	    success: function(data) {
 	        if (!data.hasOwnProperty('message')) {
+				$("title").html(data.title+' | 小小资源站');
 	            $.post({
 	                url: "https://api.github.com/markdown",
 	                data: JSON.stringify({
