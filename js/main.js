@@ -75,7 +75,7 @@ $.get({
     }
 });
 $.get({
-    url: "https://api.github.com/repos/xzyweb/xzyweb.github.io/issues?state=open&per_page=5&page=1",
+    url: "https://api.github.com/repos/xzyweb/xzyweb.github.io/issues?state=open&per_page=3&page=1",
     dataType: "json",
     success: function(data) {
         if (!data.hasOwnProperty('message')) {
