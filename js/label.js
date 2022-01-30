@@ -11,7 +11,7 @@ function labelsearch(){
 		var pagenum=getvalue('page');
 	}
 	$.get({
-	    url: "https://api.github.com/repos/xzyweb/xzyweb.github.io/issues?state=open&labels=置顶,"+pagev,
+	    url: "https://api.github.com/repos/xzyweb/xzyweb.github.io/issues?labels=置顶,"+pagev,
 	    dataType: "json",
 	    success: function(data) {
 	        if (!data.hasOwnProperty('message')) {
